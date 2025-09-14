@@ -1,4 +1,5 @@
 import './App.css';
+import styles from './App.module.css';
 import TodoList from './features/TodoList/TodoList';
 import TodoForm from './features/TodoList/TodoForm';
 import TodosViewForm from './features/TodosViewForm';
@@ -191,7 +192,7 @@ function App() {
     }
   }
   return (
-    <div>
+    <div className={styles.app}>
       <h1>My Todos</h1>
       <TodoForm onAddTodo={addTodo} isSaving={isSaving} />
       <TodoList
@@ -210,8 +211,8 @@ function App() {
         setQueryString={setQueryString}
       ></TodosViewForm>
       {errorMessage !== '' && (
-        <div>
-          <hr />
+        <div className={styles.error}>
+          <hr className={styles.spacing} />
           <p>{errorMessage}</p>
           <button onClick={() => setErrorMessage('')}>Dismiss</button>
         </div>
