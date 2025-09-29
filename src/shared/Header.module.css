@@ -1,0 +1,21 @@
+.active {
+  color: rgb(186, 186, 255);
+}
+
+.inactive {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
