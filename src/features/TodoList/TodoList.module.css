@@ -2,3 +2,11 @@
   padding: 0;
   list-style: none;
 }
+
+.paginationControls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
